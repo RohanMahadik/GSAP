@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            position: absolute;
+            inset: 0;
+
+        } 
+        .item{
+            background-color: red;
+             width: 20%;
+            height: 100%; 
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum corrupti iusto accusantium error sint nostrum a eligendi velit itaque, dignissimos nihil architecto molestiae hic sed nobis, temporibus assumenda suscipit!
+    </p>
+    
+    <div class="container" id="container">
+        <div class="item-1 item"></div>
+        <div class="item-2 item"></div>
+        <div class="item-3 item"></div>
+        <div class="item-4 item"></div>
+        <div class="item-5 item"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script>
+        var tl = gsap.timeline ()
+      
+        tl.to(".item",{
+            yPercent:-100,
+            duration:1.5,
+            stagger:0.28,
+            onComplete:()=>{
+                document.getElementById("container").style.display="none";
+            }
+        });
+     
+        
+    </script>
+</body>
+</html>
